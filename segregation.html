@@ -1,0 +1,70 @@
+<!--Cameron LaFerney-->
+
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/seg.css">
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/segregation.js"></script>
+</head>
+<body >
+	<table border='2' bordercolor='black' width='800' height='550' align='center'>
+		<tr>
+			<td align='center' colspan='3'>  
+				<h1>Schelling&#39s Model of Segregation</h1>
+			</td>
+		</tr>
+		<tr>
+			<td width='15%' align='center'>  				
+				<input type="button" class="btn reset" id="resetBtn"value="Reset"><br />
+				<input type="button" class="btn start" id="startBtn" value="Start"><br />
+				<input type="button" class="btn stop" id="stopBtn" value="Stop"><br />
+				<input type="button" class="btn step" id="stepBtn" value="Step">			
+			</td>
+			<td width='50%' align='center'> 
+				<table class="board" width="400" height="400">
+					<tbody></tbody>
+				</table>
+			</td>
+			<td width='35%' align='center'>				
+				<table cellpadding="0" height='250'>
+					<tr>
+						<td width="100">Similar: <span id="similarityValue" style="font-weight: bold;"></span><b>%</b></td>
+						<td width="100">
+							<input type='range' id='similarity' min='0' max='100' value='50' />
+						</td>
+					</tr>
+					<tr>
+						<td>Red/Blue: <span id="percentRedValue" style="font-weight: bold;"></span><b>%</b></td>
+						<td>
+							<input type='range' id='percentRed' min='0' max='100' value='50'>
+						</td>
+					</tr>
+					<tr>
+						<td>Empty: <span id="emptyValue" style="font-weight: bold;"></span><b>%</b></td>
+						<td>
+							<input type='range' id='empty' min='0' max='100' value='5' />
+						</td>
+					</tr>
+					<tr>
+						<td>Size: <span id="gridSizeValue" style="font-weight: bold;"></span></td>
+						<td>
+							<input type='range' id='gridSize' min='10' max='50' value='20'>
+						</td>
+					</tr>
+					<tr>
+						<td>Delay: <span id="delayValue" style="font-weight: bold;"></span> <b>ms</b></td>
+						<td>
+							<input type='range' id='delay' min='0' max='3000' value='300'>
+						</td>
+					</tr>
+				</table>				
+			</td>
+		</tr>
+		<tr>
+			<td align='center' colspan='3'> 
+					<div style="font-size: 1.5em; margin: 5px">Round: <span id="roundNum">0</span></div>
+					<div style="font-size: 1.5em; margin: 5px">Satisfied: <span id="satisfied">0 %</span></div>	
+			</td>
+		</tr>
+	</table>
+</body>

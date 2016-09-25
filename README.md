@@ -42,6 +42,7 @@ A Basic Segregation Model
 
 *   Stay if at least third of neighbors are the same kind
 *   Move to random location otherwise
+
 #### Macro-behavior of the game
 
 *   Initial state: random distribution of agents
